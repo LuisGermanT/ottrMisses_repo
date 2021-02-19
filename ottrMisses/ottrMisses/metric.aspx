@@ -232,6 +232,16 @@
                         </EditForm>
                     </SettingsPopup>
                     <SettingsSearchPanel Visible="True" />
+                    <SettingsExport EnableClientSideExportAPI="true" FileName="OTTR_Misses" />
+                    <Toolbars>
+                        <dx:GridViewToolbar>
+                            <SettingsAdaptivity Enabled="true" EnableCollapseRootItemsToIcons="true" />
+                            <Items>
+                                <dx:GridViewToolbarItem Command="ExportToXlsx" />
+                                <dx:GridViewToolbarItem Command="ExportToCsv" />
+                            </Items>
+                        </dx:GridViewToolbar>
+                    </Toolbars>
                     <EditFormLayoutProperties ColCount="2" ColumnCount="2">
                         <Items>
                             <dx:GridViewColumnLayoutItem ColSpan="1" ColumnName="Delay Code">
